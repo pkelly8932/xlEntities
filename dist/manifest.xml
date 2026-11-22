@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Entity"/>
   <Description DefaultValue="Custom Excel functions for working with structured entities."/>
-  <IconUrl DefaultValue="https://pkelly8932.github.io/xlEntities/addin/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://pkelly8932.github.io/xlEntities/addin/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://pkelly8932.github.io/xlEntities/dist/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://pkelly8932.github.io/xlEntities/dist/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://pkelly8932.github.io/xlEntities/"/>
   <AppDomains>
     <AppDomain>https://pkelly8932.github.io/xlEntities/</AppDomain>
@@ -21,7 +21,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://pkelly8932.github.io/xlEntities/addin/functions.html"/>
+    <SourceLocation DefaultValue="https://pkelly8932.github.io/xlEntities/dist/functions.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -45,9 +45,9 @@
     </Hosts>
     <Resources>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/addin/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/addin/functions.json"/>
-        <bt:Url id="Functions.Page.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/addin/functions.html"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/dist/functions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/dist/functions.json"/>
+        <bt:Url id="Functions.Page.Url" DefaultValue="https://pkelly8932.github.io/xlEntities/dist/functions.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="ENTITY"/>
