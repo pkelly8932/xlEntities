@@ -1,0 +1,104 @@
+{
+  "allowCustomDataForDataTypeAny": true,
+  "functions": [
+    {
+      "description": "Creates an Excel Entity card or value from JSON, XML, array text, or a range.",
+      "id": "NEW",
+      "name": "NEW",
+      "parameters": [
+        {
+          "description": "Raw JSON, XML, array literal string, or cell range.",
+          "dimensionality": "matrix",
+          "name": "input",
+          "type": "any"
+        },
+        {
+          "description": "Optional text displayed in the cell next to the entity icon.",
+          "name": "name",
+          "optional": true,
+          "type": "string"
+        },
+        {
+          "description": "If true, uses first column (2 cols) or first row (>2 cols) as keys. Default is false.",
+          "name": "headers",
+          "optional": true,
+          "type": "boolean"
+        },
+        {
+          "description": "Force a specific parser (e.g., \"json\", \"xml\", \"arrayText\", \"array\") or \"Auto\".",
+          "name": "format",
+          "optional": true,
+          "type": "string"
+        }
+      ],
+      "result": {}
+    },
+    {
+      "description": "Extracts a nested value by dot/bracket path from an Entity or raw input.",
+      "id": "GET",
+      "name": "GET",
+      "parameters": [
+        {
+          "description": "Entity cell or raw data input.",
+          "name": "source",
+          "type": "any"
+        },
+        {
+          "description": "Dot or bracket path (e.g., \"user.address.city\" or \"items.name\").",
+          "name": "path",
+          "optional": true,
+          "type": "string"
+        }
+      ],
+      "result": {}
+    },
+    {
+      "description": "Returns the keys or indices of an Entity or object.",
+      "id": "KEYS",
+      "name": "KEYS",
+      "parameters": [
+        {
+          "description": "Entity cell or raw data input.",
+          "name": "source",
+          "type": "any"
+        },
+        {
+          "description": "If true (default), spills vertically. If false, wraps in an additional array level.",
+          "name": "spill",
+          "optional": true,
+          "type": "boolean"
+        }
+      ],
+      "result": {
+        "dimensionality": "matrix"
+      }
+    },
+    {
+      "description": "Flattens an Entity, object, or array into a tabular grid up to a specified depth.",
+      "id": "FLATTEN",
+      "name": "FLATTEN",
+      "parameters": [
+        {
+          "description": "Entity cell or raw data input.",
+          "name": "source",
+          "type": "any"
+        },
+        {
+          "description": "Value to fill sibling columns in child rows (default null copies parent row values).",
+          "name": "pad_value",
+          "optional": true,
+          "type": "any"
+        },
+        {
+          "description": "Nesting depth to expand (default 1; deeper values stay as Entities).",
+          "name": "levels",
+          "optional": true,
+          "type": "number"
+        }
+      ],
+      "result": {
+        "dimensionality": "matrix"
+      }
+    }
+  ]
+}

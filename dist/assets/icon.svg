@@ -1,0 +1,30 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		path {
+			fill: none;
+			stroke: black;
+			stroke-width: 15;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+		}
+		circle{
+			fill: gray;
+			stroke: black;
+			stroke-width:5;
+		}
+		text {
+			font-family: "EB Garamond", sans-serif;
+			font-size: 100px;
+			font-weight: bold;
+			font-style: italic;
+			fill: black;
+			stroke: white;
+			stroke-width: 5px;
+			paint-order: stroke fill;
+		}
+	</style>
+	<path d="M70 160 L150 96 L230 160 L150 224 Z" />
+	<path d="M70 200 L150 264 L230 200" />
+	<circle r="70" cx="150" cy="90" fill="gray" />
+	<text x="132" y="110" font-family="'EB Garamond', serif">f</text>
+</svg>
