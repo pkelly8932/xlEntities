@@ -154,5 +154,5 @@ npm start                        # Start local HTTPS dev server and sideload int
 3. Run `npm run build` and publish the contents of `dist/` to your static host.
 4. Sideload `manifest.xml` into Excel via **Home > Add-ins > More Add-ins > Upload My Add-in** (or by using a shared network catalog).
 
-## License:
+## License
 This project is licensed under the PolyForm Perimeter License 1.0.1. You are free to use, modify, and self-host this add-in for personal or internal company use, provided you do not sell or offer it as a competing product.
